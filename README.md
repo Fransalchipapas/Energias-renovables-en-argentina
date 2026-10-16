@@ -1,31 +1,24 @@
-# Análisis de los Proyectos Mineros de la Provincia de Mendoza
+# Análisis y Predicción de la Matriz de Generación de Energías Renovables en Argentina (2011–2020)
 
-## objetivo:
-
-El objetivo es poder analizar las características, distribución y comportamiento de los proyectos mineros de la
-provincia de Mendoza mediante técnicas que nos dan resultados 
-Así podremos entrenar y testear modelos de aprendizaje 
-obteniendo así patrones y perfiles dentro de la actividad minera
-
+> Nota: Todos los registros provienen del sector dedicado a Energías Alternativas, las mediciones se realizaron 
+Mensualmente y los datos conforman el total nacional, pero están detallados a nivel Provincial.
 
 ## Objetivos específicos
 
-1. Reunir y documentar datasets públicos relacionados con proyectos y actividad minera.
-2. Filtrar o integrar la información necesaria para concentrar el análisis en Mendoza.
+1. Reunir y documentar datasets públicos relacionados.
+2. Filtrar o integrar la información necesaria.
 3. Realizar un análisis exploratorio de datos (AED/EDA) utilizando Pandas y visualizaciones.
 4. Limpiar y transformar las variables necesarias.
 5. Preparar los datos para regresión y clasificación.
 6. Comparar modelos supervisados mediante métricas apropiadas y controlar el overfitting mediante partición de datos y ajuste de hiperparámetros.
-7. Desarrollar un modelo de clustering para identificar grupos o perfiles de proyectos, explicando el criterio utilizado.
+7. Desarrollar un modelo de clustering, explicando el criterio utilizado.
 8. Documentar las decisiones, resultados y limitaciones del proyecto.
 
 > Nota: los objetivos concretos de regresión y clasificación se definirán después de inspeccionar las columnas y la calidad de los datasets reales. No se crearán objetivos artificiales solo para cumplir una técnica.
 
 ## Fuentes iniciales previstas
 
-- SIACAM / Datos Argentina — Cartera de Proyectos Mineros.
-- Datos Abiertos Mendoza — Padrón Minero.
-- SIACAM / Datos Argentina — Comercio de Minerales / Exportaciones.
+CAMMESA
 
 Las URLs exactas, versiones y fechas de descarga se registrarán en `docs/fuentes.md`.
 
@@ -42,16 +35,13 @@ Las URLs exactas, versiones y fechas de descarga se registrarán en `docs/fuente
 ## Estructura
 
 ```text
-proyecto_proyectos_mineros_mendoza/
+Energias_renovables_en_Argentina/
 ├── data/
 │   ├── raw/
 │   └── processed/
-├── notebooks/
-├── src/
-├── models/
-├── reports/
-│   └── figures/
 ├── docs/
+├── kaggle/
+├── notebooks/
 ├── .gitignore
 ├── README.md
 └── requirements.txt
@@ -78,21 +68,4 @@ Conectamos el repositorio desde la terminal:           git remote add origin htt
 Renombramos la rama actual del main                    git branch -M main 
 Subimos los comits locales a GitHub                    git push -u origin main
 ```
-## Estructura simple del proyecto
-| notebooks/             |           
-|------------------------|          
-| Exploración            |
-| Experimentos           |
-| Graficos               |
-| Comparación de modelos |
-| Interpretación         |
-         |
-         |
-        \/
-| src/        |
-|-------------|
-| carga.py    |
-| limpieza.py |
-| features.py |
-| models.py   |
-|utilidades.py|
+
