@@ -1,7 +1,20 @@
 # Análisis y Predicción de la Matriz de Generación de Energías Renovables en Argentina (2011–2020)
-
 > Nota: Todos los registros provienen del sector dedicado a Energías Alternativas, las mediciones se realizaron 
 Mensualmente y los datos conforman el total nacional, pero están detallados a nivel Provincial.
+## Fuente del proyecto:
+El dataset fue levantado de CAMMESA (Compañía Administradora del Mercado Mayorista Eléctrico S.A.), quienes coordinan la 
+operación del Sistema Argentino de Interconexión (SADI) y administran el mercado eléctrico mayorista de Argentina
+## Resumen del proyecto
+Analizamos los datos oficiales de CAMMESA para estudiar la participación de las energías renovables en Argentina.
+Realizamos limpieza, análisis exploratorio y visualización de datos para identificar tendencias y evaluar el aporte de 
+estas fuentes a la generación eléctrica nacional
+## Objetivo del proyecto
+Predecir la cantidad de energía renovable mensual que generan las provincias según el tipo de fuente y el mes del año
+para anticipar la oferta eléctrica y crear un plan estratégico.
+## Análisis exploratorio
+Descubrimos muchas columnas con información redundante propia del sector que fueron removidas, así como también la
+columna de energía nuclear fue eliminada por generar una amplia dispersión en la generación real. Se crearon columnas 
+con información temporal como, mes y año 
 
 ## Objetivos específicos
 
@@ -14,14 +27,6 @@ Mensualmente y los datos conforman el total nacional, pero están detallados a n
 7. Desarrollar un modelo de clustering, explicando el criterio utilizado.
 8. Documentar las decisiones, resultados y limitaciones del proyecto.
 
-> Nota: los objetivos concretos de regresión y clasificación se definirán después de inspeccionar las columnas y la calidad de los datasets reales. No se crearán objetivos artificiales solo para cumplir una técnica.
-
-## Fuentes iniciales previstas
-
-CAMMESA
-
-Las URLs exactas, versiones y fechas de descarga se registrarán en `docs/fuentes.md`.
-
 ## Tecnologías
 
 - Python
@@ -32,21 +37,18 @@ Las URLs exactas, versiones y fechas de descarga se registrarán en `docs/fuente
 - Scikit-learn
 - Jupyter Notebook
 
-## Estructura
+## Estructura del repositorio
 
 ```text
 Energias_renovables_en_Argentina/
 ├── data/
 │   ├── raw/
 │   └── processed/
-├── docs/
-├── kaggle/
 ├── notebooks/
 ├── .gitignore
 ├── README.md
 └── requirements.txt
 ```
-
 ## Orden de trabajo
 
 1. Selección y documentación de datasets.
@@ -58,14 +60,5 @@ Energias_renovables_en_Argentina/
 7. Clustering.
 8. Evaluación y conclusiones.
 
-## Creamos el repositorio en GitHub
-```text
-Empezamos creando el repositorio:                      git init
-Guardamos la primera version en ese repositorio local: git add .
-                                                       git commit -m "Inicializar proyecto"
-Vamos a GitHub y creamos el repositorio nuevo:         (https://github.com/Fransalchipapas/analisis-proyectos-mineros-mendoza-.git)
-Conectamos el repositorio desde la terminal:           git remote add origin https://github.com/Fransalchipapas/analisis-proyectos-mineros-mendoza-.git
-Renombramos la rama actual del main                    git branch -M main 
-Subimos los comits locales a GitHub                    git push -u origin main
-```
+
 

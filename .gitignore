@@ -32,3 +32,6 @@ reports/figures/*
 !reports/figures/.gitkeep
 
 Proyecto Ciencia de datos.docx
+
+#el readme original
+./README2.md
