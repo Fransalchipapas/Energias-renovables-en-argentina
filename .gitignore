@@ -31,7 +31,7 @@ models/*
 reports/figures/*
 !reports/figures/.gitkeep
 
-Proyecto Ciencia de datos.docx
+../Introduccion Ciencia de datos/Proyecto Ciencia de datos.docx
 
 #el readme original
-README2.md
+../Introduccion Ciencia de datos/README2.md
